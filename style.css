@@ -1,0 +1,388 @@
+/* googe fonts */
+
+    /* "bai jamjuree */
+    @import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap);
+    @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+
+
+/*  root contents */
+
+:root{
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+
+    --color-base:#033f47;
+    --color-base2:#022a30;
+
+    --color-brand:#e0f780;
+    --color-brand2:#deff58;
+    --color-brand_faded:#dcfb61ec;
+    color: #4ECDC4;
+
+
+    --font-base:"bai jamjuree";
+
+    --side_-width: 260px;
+}
+
+body{
+    /* background-color: var(--color-base2) !important; */
+    color: var(--color-body) !important;
+    font-family: var(--font-base),sans-serif !important;
+
+    background: hsla(188, 92%, 10%, 1) ;
+    background: linear-gradient(135deg, hsla(188, 92%, 10%, 1) 37%, hsla(187, 44%, 33%, 1) 45%, hsla(187, 45%, 39%, 1) 77%, hsla(187, 60%, 25%, 1) 90%, hsla(187, 92%, 15%, 1) 97%) !important;
+    background-size: 200% 200% !important;
+    background-attachment: fixed;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--color-heading) !important;
+    font-weight: 700 !important;
+}
+
+a{
+    text-decoration: none !important;
+    color: var(--color-body) !important;
+    transition: all o.4s ease;
+}
+
+p{
+    color: var(--color-body) !important;
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(224,247,128,0.3);
+}
+
+.text_brand{
+    color: var(--color-brand) !important;
+}
+
+.bg-base{
+    background-color: var(--color-base) !important;
+}
+
+.shadow-effect:hover{
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+.card_bord_hov{
+    border: 2px solid var(--color-brand) !important;
+}
+
+.cad_bord_hov:hover{
+    border: 2px solid var(--color-base2) !important;
+}
+
+.link-custom{
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 130%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after{
+    width: 100%;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* ----- navbar ------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+
+.navbar{
+    background-color: var(--color-base);
+}
+
+.nav-link{
+    color: #fff !important;
+    font-weight: 700 !important; 
+    position: relative;
+
+}
+
+.navbar .nav-link:hover{
+    color: var(--color-body) !important ;
+}
+
+.nav-link::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+
+    position: absolute;
+    left: 0;
+    top: 90%;
+    transition: all 0.4s;
+}
+
+.nav-link:hover::after{
+    width: 100% !important;
+}
+
+.profile_pic{
+    height: 170px !important;
+    width: 170px !important;
+    border: 4px solid var(--color-brand2);
+    object-fit: cover;
+}
+
+
+.navbar-toggler{
+    color: var(--color-base2) !important;
+    background-color: var(--color-body) !important;
+
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* ----- main ------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+
+
+#profile_pic2{
+    height: 150px !important;
+    width: 150px;
+    border: 4px solid var(--color-brand2);
+    object-fit: cover;
+    
+}
+
+.btn{
+    padding: 12px 28px !important;
+    font-weight: 700 !important;
+}
+
+.btn-brand{
+    background-color: var(--color-brand) !important;
+    color: var(--color-base) !important;
+}
+
+.btn-brand:hover,
+.btn-brand:focus{
+    background-color: var(--color-brand2) !important;
+    outline: 1px solid var(--color-brand2);
+    outline-offset: 5px;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* ----- services ------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+
+#service .card-footer{
+    border: 1px solid var(--color-brand) ;
+    font-weight: 700 !important;
+}
+
+.service_hr{
+    opacity: 0.75 !important;
+    color: var(--color-brand) !important;
+}
+
+#service .card:hover{
+    border: 2px solid var(--color-base2) !important;
+}
+
+.iconbox{
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+}
+/* ----------------------------------------------------------------------------------------------- */
+/* ----- work ------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+
+#work .card{
+    min-height: 20em;
+}
+
+#work .card:hover{
+    border: 2px solid var(--color-base2) !important;
+}
+
+#work .card:hover  .work_hov ,#work .card:hover .link-custom {
+    color: var(--color-brand) !important;
+    opacity: 1;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* ----- about ------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+
+#edu_main_row .card{
+    display: flex;
+    justify-items: center;
+    align-items: stretch;
+
+    border: 2px solid var(--color-base);
+    min-height: 10rem !important;
+
+}
+
+#edu_main_row .card-header{
+    height: 90% !important;
+    width: 90%;
+    border-radius: 10px;
+    margin: 0 10px;
+    background-color: var(--color-brand);
+
+
+    display: grid;
+    place-content: center;
+}
+
+#edu_main_row .card i{
+    font-size: 3rem;
+}
+
+#edu_main_row .card:hover{
+    border: 2px solid var(--color-brand);
+}
+
+
+.edu_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edu_card img{
+    max-width: clamp(8rem,10vw,9rem) !important;
+    animation: edd_card 0.5s ease-in-out;
+
+}
+.edu_card span{
+    color: var(--color-brand) !important;
+}
+
+@keyframes edd_card{
+    0%{
+        transform: rotateZ(0deg);
+    }
+
+    100%{
+        transform: rotateZ(360deg);
+    }
+
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* ----- contact ------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+#contact{
+    min-height: 85vh;
+    display: grid;
+    place-content: center;
+}
+#contact .form-control{
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    color: var(--color-body);
+}
+
+#contact .form-control:focus{
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder{
+    color: var(--color-body);
+}
+
+#contact input.form-control{
+    height: 44px;
+}
+
+.input-group-text{
+    background-color: var(--color-brand) !important;
+    color: var(--color-base) !important;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* ----- footer ------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+footer{
+    backdrop-filter: blur(550px);
+}
+.social-links a{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* ----- media query - 1 ------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+
+@media (min-width: 992px){
+
+    .navbar{
+        height: 95vh;
+        width: 240px;
+        background: linear-gradient(rgba(3, 63, 71, 0.8),rgba(3, 63, 71, 0.8)),url(./assets/sidebar-img.jpg);
+        border-radius: 50px;
+        outline: var(--color-brand) solid 2px;
+        outline-offset: 10px;
+
+
+        top: 2.5vh !important;
+        left: 1.5rem !important;
+    }
+
+    main,
+    footer{
+        padding-left: var(--side_-width) !important;
+    }
+
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* ----- media - 2 ------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+
+@media (max-width:768px){
+
+    #edu_main_row .card-header{
+        height: 8rem;
+        width: 95%;
+
+        margin: 0 auto;
+    }
+
+    #contact{
+        height: 75vh !important;
+    }
+}
